@@ -2,8 +2,7 @@
 
 function _perf_tools_profile {
   local shome="${_perf_tools_home:="$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
-  PATH="$shome/bin"
-  
+  PATH="$PATH:$shome/bin"
 }
 
 _perf_tools_profile
